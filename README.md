@@ -1,5 +1,21 @@
-Cabot Skeleton Alert Plugin
+Cabot Bulkgate Alert Plugin
 =====
 
-This is the skeleton alert plugin for Cabot. This is a sufficient launch pad for almost all Cabot alert plugins. See [writing plugins](http://cabotapp.com/dev/writing-plugins.html) for a guide on how to use it. Don't hesitate to open an issue on the official cabot github in order to ask *intelligent* questions.
+This is an alert plugin for the cabot service monitoring tool. It allows you to alert users by SMS.
 
+## Installation
+
+Install using pip
+
+    pip install --no-cache-dir git+https://github.com/s7anley/cabot_alert_bulkgate.git
+
+Edit `conf/production.env` in your Cabot clone to include the plugin:
+
+    CABOT_PLUGINS_ENABLED=cabot_alert_bulkgate...,<other plugins>
+
+## Configuration
+
+The plugin requires the following environment variables to be set:
+
+    BULKGATE_APP_ID=
+    BULKGATE_APP_TOKEN=

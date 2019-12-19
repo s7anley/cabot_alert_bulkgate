@@ -2,12 +2,12 @@
 
 from setuptools import setup, find_packages
 
-setup(name='cabot-alert-skeleton',
-      version='1.0.0',
-      description='A skeleton plugin for Cabot by Arachnys',
-      author='Arachnys',
-      author_email='info@arachnys.com',
+VERSION = '1.0.0'
+
+setup(name='cabot-alert-bulkgate',
+      version=VERSION,
+      description='A Bulkgate SMS alert plugin for Cabot',
       url='http://cabotapp.com',
       packages=find_packages(),
-      download_url = 'https://github.com/cabotapp/cabot-alert-skeleton/tarball/1.0.0',
+      download_url='https://github.com/s7anley/cabot_alert_bulkgate/archive/{}.zip'.format(VERSION),
      )
